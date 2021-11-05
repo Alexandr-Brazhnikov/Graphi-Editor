@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Canvas fx:id="CanvasD" height="400.0" layoutX="151.0" layoutY="4.0" onMouseClicked="#priiin" onMouseDragged="#print" width="1000.0" />
+      <FlowPane layoutX="14.0" layoutY="24.0" prefHeight="84.0" prefWidth="140.0">
+         <children>
+            <ColorPicker fx:id="colorP" />
+            <Label text="Выберите размер" />
+            <Slider fx:id="sliders" />
+         </children></FlowPane>
+      <VBox layoutX="14.0" layoutY="141.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+         <children>
+            <Button fx:id="lineS" mnemonicParsing="false" text="Кисть" />
+            <Button fx:id="lastick" mnemonicParsing="false" text="Ластик" />
+            <Button mnemonicParsing="false" onAction="#Loading" text="Загрузка" />
+            <Button mnemonicParsing="false" text="Button" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </children>
+</Pane>
